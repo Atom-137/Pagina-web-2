@@ -1,0 +1,188 @@
+/*Modificaciones generales*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+  width: 100%;
+  max-width: 1170px;
+  margin:auto;
+}
+
+/*Cabecera*/
+header{
+  width: 100%;
+  background-color:#fcfff5;
+
+}
+
+header > .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo img{
+  padding: 25px 0px;
+  width: 100px;
+}
+
+.menu a{
+  padding:10px;
+  color:#7a7a7a;
+  text-decoration: none;
+}
+
+@media all and (max-width:566px) {
+  header > .contenedor{
+    justify-content: center;
+  }
+
+}
+
+.menu a:hover{
+  color:orange;
+}
+/*FIN CABECERA*/
+
+.baner{
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/estudiantes.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.baner>div{
+  width: 100%;
+  height:100%;
+  background-color: rgba(255, 255,255, 0.3);
+}
+
+.llamada-accion{
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.llamada-accion p{
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.llamada-accion h2{
+
+  width: 100%;
+  max-width: 470px;
+  color:#7a7a7a;
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0.8);
+  padding:45px 0px;
+  margin-bottom: 20px;
+}
+
+.llamada-accion a{
+  color: #7a7a7a;
+  background-color: rgba(255,255,255,0.8);
+  font-size:18px;
+  text-decoration: none;
+  padding: 10px 50px;
+}
+
+.llamada-accion a:hover{
+  color:white;
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/*Fin Banner*/
+/*Inicio Galeria*/
+.galeria{
+  background-color: rgba(255, 129, 31, 0.6);
+  margin-top: 10px;
+}
+.galeria > .contenedor{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria h2{
+  width: 100%;
+  font-size: 25px;
+  color:rgba(0,0,0,0.8);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.galeria img{
+  width: 100%;
+  max-width: 350px;
+  margin:15px;
+}
+
+/*FIN GALERIA*/
+/*INICIO FOOTER*/
+.top-footer{
+  height: 25px;
+  background-color:#193441;
+}
+
+.center-footer{
+  background-color:#152d37;
+}
+.center-footer > .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.center-footer .widget{
+  width: 100%;
+  max-width: 270px;
+  color:white;
+  text-align: center;
+  padding:20px;
+}
+.center-footer .widget h4{
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+.center-footer .widget p{
+  font-size: 18px;
+}
+.center-footer .widget  a{
+  color:white;
+  text-decoration: none;
+}
+.center-footer .widget  a:hover{
+  color:orange;
+}
+
+.bottom-footer{
+  height: 25px;
+  background-color:#193441;
+  color:#707273;
+  text-align: center;
+}
+
+/*FIN FOOTER*/
